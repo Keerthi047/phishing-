@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phishing Detection with XAI</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 80px; }
+    input[type=text] { width: 400px; padding: 10px; font-size: 16px; }
+    input[type=submit] { padding: 10px 20px; font-size: 16px; background-color: #2e8b57; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    input[type=submit]:hover { background-color: #246b45; }
+  </style>
+</head>
+<body>
+  <h2> Phishing Detection Website </h2>
+  <form action="/predict" method="POST">
+    <input type="text" name="url" placeholder="Enter URL to analyze" required>
+    <br><br>
+    <input type="submit" value="Predict">
+  </form>
+</body>
+</html>
